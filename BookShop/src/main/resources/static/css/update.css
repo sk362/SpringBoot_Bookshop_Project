@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+
+/* Prevent overflow */
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Prevents vertical or horizontal scrolling */
+}
+
+/* Ensuring the container fits within the viewport */
+.container {
+    max-height: 100vh; /* Limits the height of the container to the viewport height */
+    overflow: auto; /* Enables scrolling only inside the container if necessary */
+}
+
+.card {
+    max-height: 90vh; /* Restrict the card height to 90% of the viewport height */
+    overflow: auto; /* Enable internal scrolling if content exceeds the height */
+}
+body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Custom label styles */
+label {
+    font-weight: bold;
+    font-size: 1.2rem; /* Adjust font size */
+    color: #4CAF50;    /* Green color */
+    display: block;    /* Ensure labels take up full width */
+    margin-bottom: 5px; /* Space below the label */
+}
+
+/* Customize input fields */
+input.form-control {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd; /* Border color */
+}
+
+/* Focus effect for inputs */
+input.form-control:focus {
+    border-color: #007bff; /* Blue border on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
